@@ -165,12 +165,13 @@ color: var(--accent-color);
 /*hero*/
 .overlay{
   max-width: 1600px;
-  background-image: linear-gradient
-  (to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image:
+  linear-gradient(to bottom, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
   url('../images/hero.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #2F303A;
 }
 
 .hero {
@@ -399,10 +400,11 @@ margin-bottom: 30px;
 .clients-link:hover{
   border: 1px solid var(--accent-color);
   background-color: #fff;
-  fill: var(--accent-color);
 }
 
-
+.clients-link:hover .client-btn{
+fill: var(--accent-color);
+}
 
 /*footer*/
 
@@ -557,6 +559,9 @@ header{
   margin-bottom: 50px;
   margin-right: 8px;
   border-radius: 4px;
+}
+
+.button-item .link{
   padding: 6px 22px;
 }
 
