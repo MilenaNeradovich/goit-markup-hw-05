@@ -125,9 +125,12 @@ a {
 .contacts-item{
   margin-left: 50px;
 }
-
+.contacts-item.link{
+  display: flex;
+  align-items: center;
+}
 .contacts-item:first-child{
-  margin-left 0;
+  margin-left: 0;
 }
 .site-contacts{
   display: flex;
@@ -152,6 +155,10 @@ fill: currentColor;
 color: var(--accent-color);
 }
 
+.link-email:focus,
+.link-phone:focus{
+color: var(--accent-color);
+}
 
 .contacts-icon {
   display: inline-block;
@@ -288,6 +295,7 @@ margin-bottom: 30px;
 }
 
 .team-social{
+  gap: 10px;
   display: flex;
   justify-content: center;
 }
@@ -373,13 +381,7 @@ margin-bottom: 30px;
   }
 
 .clients-item {
-  display: flex;
   height: 92px;
-  border-radius: 4px;
-  border: 1px solid #AFB1B8;
-  background-color: var(--white-color);
-  justify-content: center;
-  align-items: center;
   width: calc((100% - 150px) / 6);
   margin-right: 30px;
   }
@@ -389,20 +391,27 @@ margin-bottom: 30px;
 }
 
 .clients-link {
-  padding: 16px 32px;
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid #AFB1B8;
+  justify-content: center;
+  align-items: center;
   font-size: 0;
+  height: 100%;
   }
 
   .client-btn{
     fill: #AFB1B8;
   }
 
-.clients-link:hover{
+.clients-link:hover,
+.clients-link:focus{
   border: 1px solid var(--accent-color);
   background-color: #fff;
 }
 
-.clients-link:hover .client-btn{
+.clients-link:hover .client-btn,
+.clients-link:focus .client-btn{
 fill: var(--accent-color);
 }
 
@@ -415,6 +424,7 @@ fill: var(--accent-color);
 }
 
 .footer .container{
+  align-items: baseline;
   display: flex;
 }
 
@@ -477,6 +487,14 @@ fill: var(--accent-color);
   display: flex;
 }
 
+.footer-social-item{
+  margin-right: 10px;
+}
+
+.footer-social-item:last-child{
+  margin-right: 0;
+}
+
 .footer-social-link{
   display: flex;
   justify-content: center;
@@ -486,7 +504,7 @@ fill: var(--accent-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: var(--white-color);
-  margin-right: 10px;
+
 }
   
 .footer-social-link:hover,
@@ -500,7 +518,7 @@ header{
   border: 1px solid #ECECEC;
 }
 
-.portfolio-nav .link {
+.button-item .link {
   color: var(--main-text-color);
   background-color: #f5f4fa;
   font-family: inherit;
@@ -508,6 +526,7 @@ header{
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  border-radius: 4px;
 }
 
 .link.link-current{
@@ -545,8 +564,12 @@ header{
   line-height: 1.88;
 }
 
-.work-item:hover,
-.work-item:focus{
+.link-works{
+  display: block;
+}
+
+.link-works:hover,
+.link-works:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
