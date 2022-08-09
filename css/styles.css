@@ -125,10 +125,7 @@ a {
 .contacts-item{
   margin-left: 50px;
 }
-.contacts-item.link{
-  display: flex;
-  align-items: center;
-}
+
 .contacts-item:first-child{
   margin-left: 0;
 }
@@ -143,6 +140,8 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 
 .icon-email,
